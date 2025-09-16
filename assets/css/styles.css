@@ -1,0 +1,75 @@
+*{
+    font-family: 'Lexend', Arial, Helvetica, sans-serif;
+}
+
+
+h1, h2, h3{
+    font-size: 24px;
+    font-weight: 900;
+}
+
+
+a{
+    color: rgb(236, 93, 10);
+    text-decoration: none;
+}
+
+.button{
+    background-color: rgb(236, 93, 10);
+    color:white;
+    padding: 10px;
+    margin-right: 10px;
+    border:1px solid rgb(148, 57, 0);
+    border-radius: 20px;
+}
+
+.button2{
+    background-color: transparent;
+    color:rgb(236, 93, 10);
+    padding: 10px;
+    margin-right: 10px;
+    border:1px solid rgb(236, 93, 10);
+    border-radius: 20px;
+}
+
+
+
+/* flex box */
+/* grid */
+
+.flex{
+    display: flex;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+nav{
+    padding: 10px;
+}
+
+nav>div{
+    margin: 0 auto;
+}
+nav>div>a{
+    margin: 0 10px;
+}
+
+
+/* class style
+tag style */
