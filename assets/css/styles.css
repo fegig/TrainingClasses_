@@ -1,5 +1,6 @@
 *{
     font-family: 'Lexend', Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 
@@ -21,6 +22,8 @@ a{
     margin-right: 10px;
     border:1px solid rgb(148, 57, 0);
     border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .button2{
@@ -30,11 +33,13 @@ a{
     margin-right: 10px;
     border:1px solid rgb(236, 93, 10);
     border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 
 
-/* flex box */
+/* flexbox */
 /* grid */
 
 .flex{
@@ -73,3 +78,112 @@ nav>div>a{
 
 /* class style
 tag style */
+
+/* state effect or state style*/
+
+.button:hover{
+background-color: rgb(148, 57, 0);
+padding: 15px;
+}
+
+.button2:hover{
+    padding: 15px;
+    font-weight: 600;
+    border:2px solid rgb(236, 93, 10);
+}
+
+.button:active{
+ opacity: 0.5;
+}
+
+.button2:active{
+    opacity: 0.5;
+    background-color: rgb(236, 93, 10);
+    color:white;
+}
+
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+input[type="password"],
+textarea,
+select{
+    padding: 10px;
+    border:1px solid rgb(236, 93, 10);
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="tel"]:focus, 
+input[type="password"]:focus,
+textarea:focus,
+select:focus{
+    border:2px solid rgb(0, 158, 5);
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+/* media query */
+/* Mobile Portait max-480px */
+/* Mobile Landscape max-768px */
+/* Tablet Portait max-768px */
+/* Tablet Landscape max-1280px */
+/* Desktop max-1440px */
+/* Desktop Large max-1920px */
+/* Desktop Extra Large max-2560px */
+/* Desktop Extra Large 2 max-3840px */
+
+
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.hero{
+    background-image: url("https://img.freepik.com/free-photo/abstract-geometric-background-shapes-texture_1194-306782.jpg?semt=ais_incoming&w=740&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    padding-top: 40px;
+    padding:12px;
+    height: 70vh;
+    place-items: center;
+    display: flex;
+    background-color: #000000;
+}
+
+.hero>.container>p,div,h1{
+   margin-top: 16px;
+}
+
+
+@media (max-width: 1024px) { /* desktop */
+    .container{
+        max-width: 768px;
+        padding: 0 10px;
+    }
+}
+@media (max-width: 768px) { /* tablet */
+    .container{
+        max-width: 480px;
+        padding: 0 10px;
+    }
+}
+@media (max-width: 480px) { /* mobile */
+    .container{
+        max-width: 320px;
+        padding: 0 20px;
+    }
+}
+
+
+
+
