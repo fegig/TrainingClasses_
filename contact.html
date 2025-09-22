@@ -1,100 +1,80 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-    <meta name="author" content=""/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    
-    <link href="./assets/css/styles.css" rel="stylesheet"/>
-<title>
-    Contact Us Page
-</title>
-</head>
+  <head>
+    <meta name="author" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <link href="./assets/css/styles.css" rel="stylesheet" />
 
+    <title>Contact Us Page</title>
+  </head>
 
-    
+  <body>
     <header>
-        <nav>
-            <a href="https://picsum.photos/" >
-                <img src="https://hpanel.hostinger.com/assets/images/logos/hostinger-black.svg" alt="this_is_an_image"/> 
-            </a>
-            <div>
-                <div>
-                    <a href="./index.html">
-                        Home
-                    </a>
-                </div>
-                <div>
-                    <a href="./about.html">
-                        About Us
-                    </a>
-                </div>
-            </div>
-        </nav>
+      <nav class="flex align-center">
+        <a href="https://picsum.photos/">
+          <img
+            src="https://hpanel.hostinger.com/assets/images/logos/hostinger-black.svg"
+            alt="this_is_an_image"
+          />
+        </a>
+        <div class="flex">
+          <a href="./contact.html"> Contact Us </a>
+
+          <a href="./about.html"> About Us </a>
+        </div>
+      </nav>
     </header>
-    
-<main>
-    <section>
-<!-- Webform tags-->
-<form >
-    <div>
-        <label>
-            email
-        </label>
-        <input type="email" placeholder="Enter Email Address" />
-    </div>
-   <div>
-    <label>
-        phone
-    </label>
-    <input type="tel" placeholder="Enter Phone Number"/>
-   </div>
-      
-   <div>
-    <label>
-        message type
-    </label>
-    <select>
-<option> Option 1 </option>
-<option> Option 2 </option>
-<option> Option 3 </option>
 
-    </select>
-   </div>
-   <div>
-    <label>
-        message
-    </label>
-    <textarea>
+    <main class="container">
+      <section class="contact">
+        <!-- Webform tags-->
+        <form>
+          <div class="form-group">
+            <label> email </label>
+            <input type="email" placeholder="Enter Email Address" />
+          </div>
 
-    </textarea>
-   </div>
-   
+          <div class="form-group">
+            <label> phone </label>
+            <input type="tel" placeholder="Enter Phone Number" />
+          </div>
 
-    <input type="submit" class="button"/>
-     <!--submit event trigger-->
+          <div class="form-group">
+            <label> message type </label>
+            <select>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+            </select>
+          </div>
 
+          <div class="form-group">
+            <label> message </label>
+            <textarea rows="5" cols="30"> </textarea>
+          </div>
 
-</form>
+          <div class="form-group">
+            <input type="submit" class="button" />
+          </div>
 
+          <!--submit event trigger-->
+        </form>
+      </section>
+    </main>
+  </body>
 
-        
-    </section>
-</main>
+  <script>
+    const hello = "hello";
 
-
-</body>
-
-<script >
-    const hello = "hello"
-
-    document.addEventListener("DOMContentLoaded",(e)=>{
-        console.log(hello)
-    })    
-</script>
-
+    document.addEventListener("DOMContentLoaded", (e) => {
+      console.log(hello);
+    });
+  </script>
 </html>
