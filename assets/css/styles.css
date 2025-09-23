@@ -146,6 +146,10 @@ select:focus{
     margin: 0 auto;
 }
 
+.main-content{
+    padding: 20px 10px;
+}
+
 .hero{
     background-image: url("https://img.freepik.com/free-photo/abstract-geometric-background-shapes-texture_1194-306782.jpg?semt=ais_incoming&w=740&q=80");
     background-size: cover;
@@ -332,3 +336,43 @@ align-items: center;
     color: #5e5e5e;
     font-size: 14px;
 }
+
+.text-center{   
+    text-align: center;
+}
+
+
+.footer-content{
+    padding:20px;
+    background-color: #0f0603;
+    color: #dfdfdf;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-content>div>ul>li{
+    list-style: none;
+    margin-right: 10px;
+    color: #dfdfdf;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+.footer-content>div>ul>li>a{
+    color: #dfdfdf;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+.footer-content>div>ul>li>a:hover{
+    color: rgb(236, 93, 10);
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
