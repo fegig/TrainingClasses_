@@ -161,3 +161,45 @@ console.log(a2= Number(a2 * randNumeber).toFixed(2)) // 2
 
 basicMath(10);
 
+
+
+
+// Conditional Statement
+
+// if statement
+// if else statement
+// switch case
+// ternary statements
+
+//true or false
+
+const number = 10; 
+
+if (number === 10) {
+
+  console.log("number is: ", number);
+  //block of code
+}
+else if (number === 11) {
+  console.log("this number greater by 1 from: ", number);
+}
+else {
+  console.log("this number is not ", number);
+
+}
+
+console.log(number === 10 ? "number is: "+ number : "this number is not"+ number);
+
+switch (number) {
+  case number === 10:
+  console.log("this number greater by 1 from: ", number);
+    break;
+  case number === 11:
+  console.log("this number greater by 1 from: ", number);
+        break;
+  default:
+  console.log("this number is not: ", number);
+    break;
+}
+
+
