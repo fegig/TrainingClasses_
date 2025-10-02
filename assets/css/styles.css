@@ -560,3 +560,30 @@ footer{
         z-index: 1000;
         transition: all 0.3s ease;
     }
+
+#responseMessage{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: capitalize;
+    border:1px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.226);
+    display: none;
+}
+.success{
+    background-color: #00ff00;
+    color: #000000;
+}
+.error{
+    background-color: #ff0000;
+    color: #000000;
+}
+.loading{
+    background-color: #000000;
+    color: #ffffff;
+}

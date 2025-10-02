@@ -35,19 +35,19 @@ const runIndex = main(12.32, 20.33)
 // for ( declaration ; condition ; increment or decrement )
 const data = [10, 20, 30, 0, 45, 80, 30, 59, 20, 12]
 
-for(let i=0;  i<data.length; i++){
+// for(let i=0;  i<data.length; i++){
 
-  console.log("data"+(i+1), data[i])
+//   console.log("data"+(i+1), data[i])
 
-}
+// }
 
-data.forEach((dat,i) => {
-  console.log("data"+(i+1), dat)
-});
+// data.forEach((dat,i) => {
+//   console.log("data"+(i+1), dat)
+// });
 
-data.map((dat,i) => {
-  console.log("data"+(i+1), dat)
-})
+// data.map((dat,i) => {
+//   console.log("data"+(i+1), dat)
+// })
 
 
 //formular
