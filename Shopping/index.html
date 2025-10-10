@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home Page | Class 1</title>
+
+    <meta name="author" content="fegig" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+    <script src="./assets/js/nav.js" defer></script>
+    <script src="./assets/js/products.js" defer></script>
+
+  </head>
+
+  <body>
+    <!-- Semantic Tags-->
+    <header>
+      <nav class="flex align-center justify-between">
+        <a href="https://picsum.photos/">
+          <img
+            src="https://hpanel.hostinger.com/assets/images/logos/hostinger-black.svg"
+            alt="this_is_an_image"
+          />
+        </a>
+        <div class="flex menu-items active">
+          <a href="./contact.html"> Contact Us </a>
+
+          <a href="./about.html"> About Us </a>
+        </div>
+        <button class="bugger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+    
+      </nav>
+      <div class="mobile-menu-items">
+        <a href="./contact.html"> Contact Us </a>
+
+        <a href="./about.html"> About Us </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Welcome to today's class</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            totam at porro assumenda dolorem recusandae temporibus itaque saepe
+            quas quo, quisquam ut veritatis facilis reprehenderit quibusdam
+            ipsam dolore debitis quae?
+          </p>
+          <div>
+            <button class="button">Sign Up</button>
+            <button class="button2">Login</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="main-content">
+          <h2 class="text-center">Our Products</h2>
+          <p class="text-center">
+            We Sell only the best products in the market.
+          </p>
+
+          <div class="flex flex-wrap" id="product-list">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+        <div class="toast-container">
+            <div class="toast" id="toast"></div>
+        </div>
+      <div class="footer-content">
+        <div>
+          <img
+            src="https://hpanel.hostinger.com/assets/images/logos/hostinger-white.svg"
+            alt="this_is_an_image"
+          />
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="./about.html">About Us</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="./privacy.html">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="./terms.html">Terms of Service</a>
+            </li>
+
+            <li>
+              <a href="./cookie.html">Cookie Policy</a>
+            </li>
+          </ul>
+        </div>
+      
+      </div>
+        <div class="copyright">
+        &copy; All rights reserved Tutor 2025
+      </div>
+    </footer>
+  </body>
+</html>
