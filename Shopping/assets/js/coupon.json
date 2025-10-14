@@ -1,0 +1,22 @@
+[
+    {
+        "code": "FEG10",
+        "discount": 10
+    },
+    {
+        "code": "PRINCESS20",
+        "discount": 20
+    },
+    {
+        "code": "CHRIS30",
+        "discount": 30
+    },
+    {
+        "code": "MARVEL15",
+        "discount": 15
+    },
+    {
+        "code": "DISNEY50",
+        "discount": 50
+    }
+]

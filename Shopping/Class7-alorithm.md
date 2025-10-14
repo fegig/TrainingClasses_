@@ -11,6 +11,9 @@ v. add/remove from cart
 2. Cart Page
 i. list of items and subtotal
 ii. remove items from cart
+iii. add and remove multiple unites of same products 
+iv. calculate total of each and give us the amount after tax
+v. Add Coupon
 
 3. Checkout Page
 i. Display the price total
@@ -19,3 +22,7 @@ iii. Payment method
 iv. Buyers Info
 v. Make payment
 vi. collect receipt
+
+4. Success page
+
+5. Order Tracking Page

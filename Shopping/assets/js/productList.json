@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Denim Jacket",
+    "price": 79.99,
+    "discount": 10,
+    "currency": "GBP",
+    "description": "A classic denim jacket with a stylish design.",
+    "tags": ["jacket", "denim", "stylish"],
+    "stock": 10,
+    "isFeatured": true,
+    "category": "Clothing",
+    "tax": 0.2,
+    "image": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?auto=format&fit=crop&w=300&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Sporty Sneakers",
+    "price": 59.99,
+    "discount": 2,
+    "currency": "GBP",
+    "description": "A sporty sneaker with a stylish design.",
+    "tags": ["sneaker", "stylish", "sporty"],
+    "stock": 10,
+    "isFeatured": true,
+    "category": "Clothing",
+    "tax": 0.2,
+    "image": "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=300&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Elegant Wristwatch",
+    "price": 129.95,
+    "discount": 2,
+    "currency": "GBP",
+    "description": "An elegant wristwatch with a stylish design.",
+    "tags": ["watch", "stylish", "elegant"],
+    "stock": 10,
+    "isFeatured": true,
+    "category": "Clothing",
+    "tax": 0.2,
+    "image": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=300&q=80"
+  },
+  {
+    "id": 4,
+    "name": "Eco Cotton T-shirt",
+    "price": 24.5,
+    "discount": 2,
+    "currency": "GBP",
+    "description": "An eco cotton t-shirt with a stylish design.",
+    "tags": ["t-shirt", "eco", "stylish"],
+    "stock": 10,
+    "isFeatured": true,
+    "category": "Clothing",
+    "tax": 0.2,
+    "image": "https://images.unsplash.com/photo-1519985176271-adb1088fa94c?auto=format&fit=crop&w=300&q=80"
+  },
+  {
+    "id": 5,
+    "name": "Wireless Headphones",
+    "price": 99.99,
+    "discount": 2,
+    "currency": "GBP",
+    "description": "A wireless headphone with a stylish design.",
+    "tags": ["headphone", "stylish", "wireless"],
+    "stock": 10,
+    "isFeatured": true,
+    "category": "Clothing",
+    "tax": 0.2,
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=300&q=80"
+  }
+]
