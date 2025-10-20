@@ -69,13 +69,13 @@ const toggleCart = (productid) => {
 
 
   cart = JSON.parse(cart);
-  if (cart.includes(productid)) {
-    cart = cart.filter((id) => id !== productid);
+  if (cart && cart?.includes(productid)) {
+    cart = cart?.filter((id) => id !== productid);
     cartBtn.style.display = "block";
     cartBtn.classList.add("active");
     const badge = cartBtn?.getElementsByClassName("badge")[0];
-    if (badge) badge.innerHTML = cart.length;
-    if(cart.length < 1) {
+    if (badge) badge.innerHTML = cart?.length;
+    if(cart?.length < 1) {
       cartBtn.style.display = "none";
     }
 
@@ -83,13 +83,13 @@ const toggleCart = (productid) => {
   btn.innerHTML = "Add to Cart";
     showToast("Item removed from cart", "success");
   } else {
-    cart.push(productid);
+    cart &&cart?.push(productid);
 
 
   cartBtn.style.display = "block";
   cartBtn.classList.add("active");
   const badge = cartBtn?.getElementsByClassName("badge")[0];
-  if (badge) badge.innerHTML = cart.length;
+  if (badge) badge.innerHTML = cart?.length;
 
     btn.style.display = "block";
     btn.innerHTML = "Remove from Cart";
@@ -111,7 +111,7 @@ const toggleCart = (productid) => {
 const checkCart = (productid) => {
   let cart = localStorage.getItem("cart");
   cart = JSON.parse(cart);
-  return cart && cart.includes(productid);
+  return cart && cart?.includes(productid);
 };
 
 const calculateDiscount = (price, discount) => {
