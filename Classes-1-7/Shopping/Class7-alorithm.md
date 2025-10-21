@@ -4,7 +4,7 @@
 i. Categories
 ii. Items Information
 iii. Price
-iv. product preview
+iv. product preview // to be designed by you
 v. add/remove from cart
 
 
@@ -23,6 +23,6 @@ iv. Buyers Info
 v. Make payment
 vi. collect receipt
 
-4. Success page
+4. Status page //to be designed by you
 
 5. Order Tracking Page

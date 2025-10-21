@@ -942,3 +942,13 @@ header{
     color: #ffffff;
     padding: 10px;
 }
+.button.disabled{
+    background-color: #c9c9c9;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.button.disabled:hover{
+    background-color: #c9c9c9;
+    opacity: 0.5;
+    cursor: not-allowed;
+}

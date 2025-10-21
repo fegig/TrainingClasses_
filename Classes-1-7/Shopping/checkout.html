@@ -81,7 +81,7 @@
                 <div class="checkout-page-tab" id="billing-address">
                     <h3>Billing Address</h3>
                     <div class="checkout-billing-address-form">
-                     <form>
+                     <form id="billing-address-form">
                         <div class="checkout-billing-address-form-input form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name">
@@ -120,7 +120,7 @@
                 <div class="checkout-page-tab" id="payment-method">
                     <h3>Payment Method</h3>
                     <div class="checkout-payment-method-form">
-                        <form>
+                        <form id="payment-method-form">
                             <div class="checkout-payment-method-form-input form-group">
                                 <label for="payment-method">Payment Method</label>
                                 <select id="payment-method" name="payment-method">
@@ -136,10 +136,19 @@
                         </form>
                     </div>
                 </div>
+                <div class="checkout-page-tab" id="order-confirmation">
+                    <h3>Order Confirmation</h3>
+                    <div class="order-confirmation-form">
+                        <form id="order-confirmation-form">
+                            <div class="order-confirmation-form-input form-group">
+                              <button class="button">Make Payment</button>
+                            </div>
+                        </form>
+                    </div>   
             </div>
             <div class="checkout-page-buttons">
-                <button class="button" onclick="activeCheckoutPage('previous')">Previous</button>
-                <button class="button" onclick="activeCheckoutPage('next')">Next</button>
+                <button class="button previous" onclick="activeCheckoutPage('previous')">Previous</button>
+                <button class="button next" onclick="activeCheckoutPage('next')">Next</button>
             </div>
         </div>
     </main>
