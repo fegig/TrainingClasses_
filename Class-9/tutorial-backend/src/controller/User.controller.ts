@@ -4,7 +4,7 @@ import { Attendance, dailyAttendance } from "../model/Attendance.model";
 import { AttendanceType, DailyAttendanceType } from "../types/Attendance.type";
 import { authMiddleware } from "../middleware/auth.middleware";
 import { zValidator } from "@hono/zod-validator";
-import { UserSchema } from "../types/User.type";
+import { UserSchema } from "../schema/User.schema";
 
 const userController = new Hono().use("*", authMiddleware as MiddlewareHandler<any, "*", {}, Response>);
 
