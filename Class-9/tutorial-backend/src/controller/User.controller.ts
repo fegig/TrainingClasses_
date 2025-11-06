@@ -1,15 +1,23 @@
-import { type Context, Hono } from "hono";
+import { type Context, Hono, MiddlewareHandler } from "hono";
 import User from "../model/User.model";
 import { Attendance, dailyAttendance } from "../model/Attendance.model";
 import { AttendanceType, DailyAttendanceType } from "../types/Attendance.type";
+import { authMiddleware } from "../middleware/auth.middleware";
+import { zValidator } from "@hono/zod-validator";
+import { UserSchema } from "../types/User.type";
 
-const userController = new Hono();
+const userController = new Hono().use("*", authMiddleware as MiddlewareHandler<any, "*", {}, Response>);
 
-userController.get("/", (c: Context) => {
+
+
+
+userController.get("/",  (c: Context) => {
   return c.json({ users: User });
 });
 
-userController.get("/:userId", (c: Context) => {
+
+
+userController.get("/:userId", zValidator("param", UserSchema.pick({ userId: true }).required()), (c: Context) => {
   const userId = c.req.param("userId");
   const user = User.find((user) => user.userId === userId);
   if (!user) {

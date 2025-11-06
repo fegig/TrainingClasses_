@@ -2,13 +2,13 @@ import { UserType } from "../types/User.type";
 
 const User: UserType[] = [
   {
-    userId: "1skdjv0wifvnsi09dvcijsdovaj9",
+    userId: "1234-5678-9012-3456",
     name: "Princess Doe",
     email: "princess.doe@example.com",
     password: "12345qwerty",
   },
   {
-    userId: "shu9fgh8uehgugs9dhufh9sh9fh",
+    userId: "1234-5678-9012-3457",
     name: "Chris Doe",
     email: "chris.doe@example.com",
     password: "123098p;oiqwerty",
