@@ -1,10 +1,12 @@
 import { Hono } from 'hono'
 import userController from './controller/User.controller';
+import studentController from './controller/Student.controller';
 
 const app = new Hono()
 
 
 app.route('/users', userController);
+app.route('/students', studentController);
  
 
 

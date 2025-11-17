@@ -9,13 +9,9 @@ import { UserSchema } from "../schema/User.schema";
 const userController = new Hono().use("*", authMiddleware as MiddlewareHandler<any, "*", {}, Response>);
 
 
-
-
 userController.get("/",  (c: Context) => {
   return c.json({ users: User });
 });
-
-
 
 userController.get("/:userId", zValidator("param", UserSchema.pick({ userId: true }).required()), (c: Context) => {
   const userId = c.req.param("userId");
