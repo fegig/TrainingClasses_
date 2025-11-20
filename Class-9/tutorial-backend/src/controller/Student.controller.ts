@@ -37,6 +37,15 @@ studentController.get("/highest-students-per-country", (c: Context) => {
     return c.json({ highestStudentsPerCountry: Object.entries(highestStudentsPerCountry).sort((a, b) => b[1] - a[1])[0] });
 })
 
+studentController.get("/highest-country-students", (c: Context) => {
+    const highestCountryStudents = Object.entries(highestStudentsPerCountry).sort((a, b) => b[1] - a[1])[0];
+    const studentList = StudentData.filter((student) => student.studentCountry === highestCountryStudents[0]);
+
+    return c.json({ highestCountryStudents: studentList });
+})
+
+
+
 
 export default studentController;
 
@@ -52,3 +61,9 @@ const highestStudentsPerCountry = StudentData.filter((student) => student.studen
     return acc;
 }, {} as Record<string, number>) ?? {};
 
+
+
+()=>{
+
+
+}
