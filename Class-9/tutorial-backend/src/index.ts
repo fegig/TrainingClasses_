@@ -2,12 +2,14 @@ import { Hono } from 'hono'
 import userController from './controller/User.controller';
 import studentController from './controller/Student.controller';
 import invertTripleController from './controller/Task.controller';
+import booksController from './controller/Books.controller';
 const app = new Hono()
 
 
 app.route('/users', userController);
 app.route('/students', studentController);
 app.route('/invert-and-triple', invertTripleController);
+app.route('/books', booksController);
  
 
 
@@ -46,3 +48,6 @@ export default app
 // Logging ( Winston, Bunyan, Pino, Sentry)
 
 // Error Handling (Express Error Handling, Sentry)
+
+
+// Params, Query, Body, Headers, Cookies
