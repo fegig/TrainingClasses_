@@ -5,6 +5,7 @@ import { AttendanceType, DailyAttendanceType } from "../types/Attendance.type";
 import { authMiddleware } from "../middleware/auth.middleware";
 import { zValidator } from "@hono/zod-validator";
 import { UserSchema } from "../schema/User.schema";
+import { paginationResponse } from "@/functions/global";
 
 const userController = new Hono().use("*", authMiddleware as MiddlewareHandler<any, "*", {}, Response>);
 
@@ -26,6 +27,10 @@ userController.get("/:userId", zValidator("param", UserSchema.pick({ userId: tru
 userController.get("/:userId/attendance", (c: Context) => {
   const userId = c.req.param("userId");
 
+  const page = c.req.query("page") || 1;
+  const limit = c.req.query("perPage") || 5;
+
+
   const attendanceId = Attendance.find((attendance: AttendanceType) => attendance.userId === userId)?.attendanceId;
 
   if (!attendanceId) {
@@ -35,7 +40,13 @@ userController.get("/:userId/attendance", (c: Context) => {
   if (!attendance) {
     return c.json({ message: "user has no attendance" }, 404);
   }
-  return c.json(attendance, 200);
+  return c.json(paginationResponse(attendance, page, limit), 200);
+});
+
+userController.get("/all/list", (c: Context) => {
+  const page = c.req.query("page") || 1;
+  const limit = c.req.query("perPage") || 5;
+  return c.json(paginationResponse(Attendance, page, limit), 200);
 });
 
 export default userController;

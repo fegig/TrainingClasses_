@@ -9,6 +9,18 @@ const Attendance: AttendanceType[] = [
     attendanceId: "HJJ98SAUDHGFUS9F",
     userId: "shu9fgh8uehgugs9dhufh9sh9fh"
   },
+  {
+    attendanceId: "NJKDSA9FHASJDFHASJDF",
+    userId: "sjdg98sd7fh879sdh897fhs"
+  },
+  {
+    attendanceId: "JHS8AF7EFHG8SDHFHJSD",
+    userId: "oisa0dfoajdfsajdofjsidj"
+  },
+  {
+    attendanceId: "HJSDFH97FHSDF987SHF",
+    userId: "shu9fgh8uehgugs9dhufh9sh9fh9"
+  },
 ];
 
 const dailyAttendance: DailyAttendanceType[] = [

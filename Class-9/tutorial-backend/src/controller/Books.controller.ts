@@ -37,6 +37,3 @@ booksController.get("/", (c: Context) => {
 });
 
 export default booksController;
-
-
-

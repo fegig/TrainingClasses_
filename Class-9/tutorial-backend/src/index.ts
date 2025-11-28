@@ -3,7 +3,12 @@ import userController from './controller/User.controller';
 import studentController from './controller/Student.controller';
 import invertTripleController from './controller/Task.controller';
 import booksController from './controller/Books.controller';
+import { rateLimiterMiddleware } from './middleware/rate.middleware';
 const app = new Hono()
+
+
+
+app.use('*', rateLimiterMiddleware)
 
 
 app.route('/users', userController);
